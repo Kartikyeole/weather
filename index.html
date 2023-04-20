@@ -75,7 +75,7 @@
     }
     function changeit() {
       citydata()
-      fetch('http://api.weatherapi.com/v1/current.json?key=0dab0f140b5b4da798d74954231904&q='+cityname+'&aqi=no')
+      fetch('https://api.weatherapi.com/v1/current.json?key=0dab0f140b5b4da798d74954231904&q='+cityname+'&aqi=no')
         .then(res => res.json())
         .then(data => {
           console.log(data)
