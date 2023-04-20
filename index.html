@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DashBoard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="jqery.js">
+  <style>
+    #title {
+      font-family: 'Kumar One', cursive;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="jumbotron text-center" id="title">
+    <h1>DashBoard</h1>
+  </div>
+    <div class="sch" style="display: flex;">
+      <input type="text" class="form-control" id="name" placeholder="Search City">
+      <button id="x" onclick="changeit()" style="width: 20%;">Search</button>
+    </div>
+
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>
+        <span class="data" id="city"><span id="y"></span></span>
+      </h1>
+      <span class="data" id="region">Region: <b><span id="r"></span></b></span><br>
+      <span class="data" id="country">Country: <b><span id="c"></span></b></span><br>
+      <span class="data" id="time">Time: <b><span id="t"></span></b></span><br>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4" style="text-align: center;">
+      <div class="temp">
+        <p>Max Temp: <b><span id="max_temp_c"></span>°C</b></p>
+        <p>Max Temp: <b><span id="max_temp_f"></span>°F</b></p>
+      </div>
+    </div>
+    <div class="col-sm-4" style="text-align: center;">
+      <div class="temp">
+        <p>Wind speed in KPH: <b><span id="wind_kph"></span>KPH</b></p>
+        <p>Wind speed in KPH: <b><span id="wind_mph"></span>MPH</b></p>
+      </div>
+    </div>
+    <div class="col-sm-4" style="text-align: center;">
+      <div class="temp">
+        <p>Humidity : <b><span id="humidity"></span>%</b></p>
+        <p>Cloud : <b><span id="cloud"></span>%</b></p>
+        <p>UV Index :  <b><span id="uv"></span>UVI</b></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    var cityname
+    function citydata(){
+    
+    cityname = document.getElementById('name').value;
+
+    console.log(cityname);
+    }
+    function changeit() {
+      citydata()
+      fetch('http://api.weatherapi.com/v1/current.json?key=0dab0f140b5b4da798d74954231904&q='+cityname+'&aqi=no')
+        .then(res => res.json())
+        .then(data => {
+          console.log(data)
+          var city = data.location
+          var forc = data.current
+          document.getElementById("y").innerText = city.name;
+          document.getElementById("r").innerText = city.region;
+          document.getElementById("c").innerText = city.country;
+          document.getElementById("t").innerText = city.localtime;
+          document.getElementById("max_temp_c").innerText = forc.temp_c;
+          document.getElementById("max_temp_f").innerText = forc.temp_f;
+          document.getElementById("wind_kph").innerText = forc.wind_kph;
+          document.getElementById("wind_mph").innerText = forc.wind_mph;
+          document.getElementById("humidity").innerText = forc.humidity;
+          document.getElementById("cloud").innerText = forc.cloud;
+          document.getElementById("uv").innerText = forc.uv;
+        })
+    }
+
+    $(document).ready(function () {
+      $("#x").click(function(){
+        $("#y").show();
+      });
+    });
+
+  </script>
+</body>
+
+</html>
