@@ -80,7 +80,7 @@
 
 	<section class="about" id="about">
 
-		<div class="container">	
+		<div class="container">
 			<div class="content">
 				<div class="box wow bounceInUp">
 					<div class="inner">
@@ -450,37 +450,37 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
 		var city;
-		
-		function current_show(){
+
+		function current_show() {
 			city = document.getElementById('cityid').value;
-			var url = 'https://api.weatherapi.com/v1/current.json?key=e71d3a4c2c2940948fd145756230205&q='+ city + '&aqi=yes';
+			var url = 'https://api.weatherapi.com/v1/current.json?key=e71d3a4c2c2940948fd145756230205&q=' + city + '&aqi=yes';
 			var info;
-			$(document).ready(function(){
+			$(document).ready(function () {
 				fetch(url)
-				.then(res => res.json())
-				.then(data => {
-					info = data;
-					console.log(data)
-					document.getElementById('temp_c').innerText = info.current.temp_c;
-					document.getElementById('vis_km').innerText = info.current.vis_km;
-					document.getElementById('uv').innerText = info.current.uv;
-					document.getElementById('humidity').innerText = info.current.humidity;
-					document.getElementById('precip_in').innerText = info.current.precip_in;
+					.then(res => res.json())
+					.then(data => {
+						info = data;
+						console.log(data)
+						document.getElementById('temp_c').innerText = info.current.temp_c;
+						document.getElementById('vis_km').innerText = info.current.vis_km;
+						document.getElementById('uv').innerText = info.current.uv;
+						document.getElementById('humidity').innerText = info.current.humidity;
+						document.getElementById('precip_in').innerText = info.current.precip_in;
 
-					document.getElementById('cloud').innerText = info.current.cloud;
-					document.getElementById('wind_kph').innerText = info.current.wind_kph;
-					document.getElementById('wind_dir').innerText = info.current.wind_dir;
-					document.getElementById('wind_degree').innerText = info.current.wind_degree;
-					document.getElementById('pressure_in').innerText = info.current.pressure_in;
+						document.getElementById('cloud').innerText = info.current.cloud;
+						document.getElementById('wind_kph').innerText = info.current.wind_kph;
+						document.getElementById('wind_dir').innerText = info.current.wind_dir;
+						document.getElementById('wind_degree').innerText = info.current.wind_degree;
+						document.getElementById('pressure_in').innerText = info.current.pressure_in;
 
-					document.getElementById('co').innerText =  info.current.air_quality.co;
-					document.getElementById('no2').innerText = info.current.air_quality.no2;
-					document.getElementById('o3').innerText =  info.current.air_quality.o3;
-					document.getElementById('so2').innerText = info.current.air_quality.so2;
-					document.getElementById('pm10').innerText =info.current.air_quality.pm10;
+						document.getElementById('co').innerText = info.current.air_quality.co;
+						document.getElementById('no2').innerText = info.current.air_quality.no2;
+						document.getElementById('o3').innerText = info.current.air_quality.o3;
+						document.getElementById('so2').innerText = info.current.air_quality.so2;
+						document.getElementById('pm10').innerText = info.current.air_quality.pm10;
 
-					
-				});
+
+					});
 
 				$(".about").show("slow");
 			})
