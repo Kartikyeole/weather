@@ -40,7 +40,7 @@ header .logo a{
 	font-weight: 700;
 }
 header .logo a span{
-	color:	;
+	color:	red;
 }
 header .nav{
 	position: fixed;
@@ -753,12 +753,12 @@ header .ham-burger.active span:nth-child(2){
 	height: 100px;
 }
 
-.Current .content .form button{
+.Current .content .form .but{
 	border:none;
 	outline: none;
 	box-shadow: none;
 	height: 45px;
-	padding:0px 50px;
+	padding:6px 50px;
 	border:1px solid transparent;
 	background-color: #c11325;
 	color:#ffffff;
