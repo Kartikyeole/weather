@@ -1,0 +1,161 @@
+{
+    "settings": {
+        "formspreeURL": "https://formspree.io/f/myyqbpqq",
+        "mailchimp": {
+            "url": "",
+            "key": ""
+        }
+    },
+    "header": {
+        "logo": {
+            "text": "IOIT MUN",
+            "url": "img/hero/mun.png",
+            "url2": "img/hero/ioitmun.png",
+            "url3": "img/hero/mun2.png",
+            "url4": "img/hero/ioitmun2.png",
+            "accent": ""
+        },
+        "menu": [
+            {
+                "label": "Home",
+                "link": "/",
+                "children": [
+                    
+                ]
+            },
+            {
+                "label": "Committees",
+                "link": "#.",
+                "children": [
+                    {
+                        "label": "UNSC",
+                        "link": "/unsc"
+                    },
+                    {
+                        "label": "UNDP",
+                        "link": "/undp"
+                    },
+                    {
+                        "label": "G20",
+                        "link": "/g20"
+                    },
+                    {
+                        "label": "AIPPM",
+                        "link": "/aippm"
+                    },
+                    {
+                        "label": "UNHRC",
+                        "link": "/unhrc"
+                    }
+                ]
+            },
+            {
+                "label": "Secretariat",
+                "link": "/contact",
+                "children": [
+                    
+                ]
+            },
+            {
+                "label": "Contact",
+                "link": "/contact",
+                "children": 0
+            },
+            {
+                "label": "Gallery",
+                "link": "/portfolio",
+                "children": 0
+            },
+            {
+                "label": "FAQ",
+                "link": "/contact",
+                "children": 0
+            }
+        ]
+    },
+    "footer": {
+        "logo": {
+            "text": "It’s Time to Pull in <br />a",
+            "accent": " Professional"
+        },
+        "description": "Adipisicing elit consequuntur odit accusamus, aspern loluptates ea consequuntur aspernatur fugiat. Lorem ipsum dolor sit amet.",
+        "menu": [
+            {
+                "label": "Homepage",
+                "link": "/"
+            },
+            {
+                "label": "Committees",
+                "link": "about"
+            },
+            {
+                "label": "Secretariat",
+                "link": "portfolio"
+            },
+            {
+                "label": "Gallery",
+                "link": "blog"
+            },
+            {
+                "label": "Contact",
+                "link": "contact"
+            }
+        ],
+        "links": [
+            {
+                "label": "Terms",
+                "link": "#."
+            },
+            {
+                "label": "Careers",
+                "link": "#."
+            },
+            {
+                "label": "Privacy Policy",
+                "link": "#."
+            },
+            {
+                "label": "Help Center",
+                "link": "#."
+            }
+        ],
+        "copy": "© 2023 IOIT MUN. All Rights Reserved.",
+        "dev": "Developed by: Students of ACM IOIT ",
+        "bg_image": "/img/hero/1.jpg",
+        "instagram": {
+            "images": [
+                "img/content/instagram-2/1.jpg",
+                "img/content/instagram-2/2.jpg",
+                "img/content/instagram-2/3.jpg",
+                "img/content/instagram-2/4.jpg",
+                "img/content/instagram-2/5.jpg",
+                "img/content/instagram-2/6.jpg"
+            ],
+            "button": {
+                "label": "Our Instagram",
+                "link": "https://instagram.com"
+            }
+        }
+    },
+    "contacts": {
+        "email": "ioitmun@gmail.com",
+        "tel": "+91 0123456789"
+    },
+    "social": [
+        {
+            "link": "https://linkedin.com",
+            "icon": "fab fa-linkedin-in",
+            "title": "Facebook"
+        },
+        {
+            "link": "https://twitter.com",
+            "icon": "fab fa-twitter",
+            "title": "Twitter"
+        },
+        {
+            "link": "https://instagram.com",
+            "icon": "fab fa-instagram",
+            "title": "Instagram"
+        }
+    ]
+}

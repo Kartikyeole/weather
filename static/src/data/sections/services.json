@@ -1,0 +1,47 @@
+{
+    "bg_image": "img/content/3.jpg",
+    "items": [
+        {
+            "num": "01",
+            "title": "AIPPM",
+            "icon": "img/icons/1.svg",
+            "text": "All India Political Parties Meet ",
+            "link": "/services/website-content"
+        },
+        {
+            "num": "02",
+            "title": "G20",
+            "icon": "img/icons/2.svg",
+            "text": "G20",
+            "link": "/services/blog-articles"
+        },
+        {
+            "num": "03",
+            "title": "UNDP",
+            "icon": "img/icons/3.svg",
+            "text": "The United Nations Development Programme",
+            "link": "/services/product-captions"
+        },
+        {
+            "num": "04",
+            "title": "UNHRC",
+            "icon": "img/icons/4.svg",
+            "text": "The United Nations Human Rights Council",
+            "link": "/services/email-writing"
+        },
+        {
+            "num": "05",
+            "title": "Commmitee",
+            "icon": "img/icons/4.svg",
+            "text": "Deleniti ratione, delectus beatae, exercitationem debitis, dignissimos similique, atque, officiis.",
+            "link": "/services/email-writing"
+        },
+        {
+            "num": "06",
+            "title": "UNSC",
+            "icon": "img/icons/4.svg",
+            "text": "The United Nations Security Council",
+            "link": "/services/email-writing"
+        }
+    ]
+}

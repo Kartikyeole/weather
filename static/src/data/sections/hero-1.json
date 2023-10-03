@@ -1,0 +1,49 @@
+{
+    "bg_image": "img/hero/1.jpg",
+    "subtitle": "ACM Welcomes You To",
+    "title": { "before": "IOIT", "accent": "MUN", "after": "UNITY THROUGH DIPLOMACY" },
+    "description": "",
+    "image": "img/hero/home-bg.jpg",
+    "partners": [
+        {
+            "image": "img/partners/1.svg",
+            "link": "#.",
+            "alt": "logo"
+        },
+        {
+            "image": "img/partners/2.svg",
+            "link": "#.",
+            "alt": "logo"
+        },
+        {
+            "image": "img/partners/3.svg",
+            "link": "#.",
+            "alt": "logo"
+        },
+        {
+            "image": "img/partners/4.svg",
+            "link": "#.",
+            "alt": "logo"
+        },
+        {
+            "image": "img/partners/5.svg",
+            "link": "#.",
+            "alt": "logo"
+        },
+        {
+            "image": "img/partners/6.svg",
+            "link": "#.",
+            "alt": "logo"
+        },
+        {
+            "image": "img/partners/7.svg",
+            "link": "#.",
+            "alt": "logo"
+        },
+        {
+            "image": "img/partners/8.svg",
+            "link": "#.",
+            "alt": "logo"
+        }
+    ]
+}
